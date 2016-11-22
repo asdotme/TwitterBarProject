@@ -1,0 +1,113 @@
+/*clear default margin */
+body{
+    margin: 0 2%;
+
+}
+/*default width*/
+#nav2 ul li {
+    display: inline-block;
+}
+
+#nav2 ul li {
+    list-style-type: none;
+    font-size: 17px;
+    /*padding: 5px 15px;*/
+    border-radius: 3px;
+    text-align: center;
+}
+
+#nav2 ul li.active_link {
+    background-color: #b9dce5;
+    border: 1px solid #94b3c5
+}
+
+#nav2 ul li:hover {
+    background-color: #b9dce5;
+}
+
+#nav2 ul li > a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+#nav2 ul li > a:hover {
+    text-decoration: underline;
+}
+
+/*for larger screens*/
+@media all and (max-width: 2000px) {
+    #nav2 ul li {
+        display: inline-block;
+    }
+
+    #nav2 {
+        border-bottom: 1px solid #ccc;
+        vertical-align: baseline;
+        padding: 5px;
+        margin-left: 100px;
+
+    }
+}
+
+/*for smaller screen*/
+@media all and (max-width: 800px) {
+    #nav2 ul li {
+        width: 200px;
+        background-color: #ddd;
+        border: 1px solid #ccc;
+        display: block;
+    }
+
+    #nav2 {
+        width: 200px;
+        margin: auto;
+        border-bottom: none;
+    }
+}
+
+section#main {
+    min-height: 600px;
+}
+
+
+footer {
+    height: 50px;
+    background-color: #7ca9c5;
+    border: 1px solid #6898c5;
+}
+
+#project_name{
+    float: left
+}
+ul{
+    margin: 0;
+}
+#nav1{
+    float: right;
+}
+
+#nav1 ul li{
+    display: inline;
+    padding: 5px 10px;
+}
+#nav1 a{
+    text-decoration: none;
+}
+#nav1 a:hover{
+    text-decoration: underline;
+}
+#banner {
+    height: 175px;
+    /*background: url("/assets/img/twitter_logo.jpg") no-repeat;*/
+    background: url("/assets/img/long_banner3.jpg") no-repeat;
+    background-size: 100% 175px;
+    clear: both;
+    /*background-repeat: no-repeat;*/
+}
+#first_header{
+    border-top: 1px solid #aaa;
+    border-bottom: 2px solid #06a2c5;
+    padding: 5px;
+    overflow: hidden;
+}
