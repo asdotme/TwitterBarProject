@@ -23,10 +23,20 @@ public class TrendsServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String headerName = request.getHeader("x-requested-with");
+
 
         request.setAttribute("trends", this.getTweets(request));
-        request.setAttribute("currentPageContent", "_trends.jsp");
-        request.getRequestDispatcher("layout.jsp").forward(request, response);
+
+        if(headerName==null){
+            System.out.println("non ajx request");
+            request.setAttribute("currentPageContent", "_trends.jsp");
+            request.getRequestDispatcher("layout.jsp").forward(request, response);
+        }else{
+            System.out.println("ajax request");
+            request.getRequestDispatcher("_ajaxtrends.jsp").forward(request, response);
+
+        }
 
     }
 
