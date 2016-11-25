@@ -8,7 +8,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -17,23 +16,16 @@ import java.util.List;
  */
 @WebServlet(name = "TweetsServlet", urlPatterns = {"/tweets"})
 public class TweetsServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         String queryType = this.getActiveQueryType(request);
-
         int maxNumOfTweets = Integer.parseInt(getServletContext().getInitParameter("maxNumOfTweets"));
-
         //Fetch data from twitter
-        List<Tweets> result = TwitterCall.getJsonStringFromTwitter(maxNumOfTweets, queryType);
+        List<Tweets> result = TwitterCall.getTweetsByCategory(maxNumOfTweets, queryType);
         request.setAttribute("tweets", result);
 
         request.setAttribute("currentPageContent", "_tweets.jsp");
-        request.getRequestDispatcher("layout.jsp").forward(request, response);
+        request.getRequestDispatcher("home.jsp").forward(request, response);
     }
 
     public String getActiveQueryType(HttpServletRequest request) {

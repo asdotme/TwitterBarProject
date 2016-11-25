@@ -3,4 +3,31 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <context-param>
+        <param-name>maxNumOfTweets</param-name>
+        <param-value>8</param-value>
+    </context-param>
+    <context-param>
+        <param-name>defaultTweets</param-name>
+        <param-value>documentary</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>radiusUnit</param-name>
+        <param-value>mi</param-value>
+    </context-param>
+    <context-param>
+        <param-name>radius</param-name>
+        <param-value>10</param-value>
+    </context-param>
+    <context-param>
+        <param-name>maxNumOfTrends</param-name>
+        <param-value>5</param-value>
+    </context-param>
+
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+
+
 </web-app>

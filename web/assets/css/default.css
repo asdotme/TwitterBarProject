@@ -3,6 +3,13 @@ body{
     margin: 0 2%;
 
 }
+#main{
+    overflow: hidden;
+}
+/*global color*/
+*{
+    color: #108ac5;
+}
 /*default width*/
 #nav2 ul li {
     display: inline-block;
@@ -45,7 +52,7 @@ body{
         border-bottom: 1px solid #ccc;
         vertical-align: baseline;
         padding: 5px;
-        margin-left: 100px;
+        /*margin-left: 100px;*/
 
     }
 }
@@ -67,7 +74,7 @@ body{
 }
 
 section#main {
-    min-height: 600px;
+    min-height: 500px;
 }
 
 
@@ -86,6 +93,10 @@ ul{
 #nav1{
     float: right;
 }
+#first_header{
+    font-size: 18px;
+    font-weight: bold;
+}
 
 #nav1 ul li{
     display: inline;
@@ -98,16 +109,43 @@ ul{
     text-decoration: underline;
 }
 #banner {
-    height: 175px;
+    /*height: 175px;*/
+    height: 35px;
     /*background: url("/assets/img/twitter_logo.jpg") no-repeat;*/
-    background: url("/assets/img/long_banner3.jpg") no-repeat;
-    background-size: 100% 175px;
+    /*background: url("/TwitterBarProject/assets/img/long_banner3.jpg") no-repeat;*/
+
+    background-color: #41bdf2;
+    /*background-size: 100% 175px;*/
     clear: both;
     /*background-repeat: no-repeat;*/
 }
 #first_header{
     border-top: 1px solid #aaa;
-    border-bottom: 2px solid #06a2c5;
+    border-bottom: 2px solid #0496bf;
     padding: 5px;
     overflow: hidden;
+    color: black;
+}
+#first_header a{
+    text-decoration: none;
+}
+#home_logo{
+    background: url("/TwitterBarProject/assets/img/home_logo.jpg") no-repeat;
+    background-size: 100% auto ;
+    height: 700px;
+    /*width: 100%;*/
+    /*margin: auto 20%;*/
+
+}
+#home_text{
+    font-size: 50px;
+}
+
+#home_cont{
+    padding: 0 25%;
+}
+footer p{
+    text-align: center;
+    font-size: 18px;
+    color: white;
 }

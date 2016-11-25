@@ -1,0 +1,71 @@
+.tweet{
+    float: left;
+    border: 1px solid #ccc;
+    height: 160px;
+    border-radius: 4px;
+}
+
+
+/*for larger screens*/
+@media all and (max-width: 2000px) {
+    .tweet{
+        margin: 1%;
+        width: 22%;
+    }
+}
+/*for smaller screen*/
+@media all and (max-width: 800px) {
+    .tweet{
+        margin: 1%;
+        width: 46%;
+    }
+
+}
+
+.tweet img{
+    width: auto;
+    height: 60px;
+    /*float: left;*/
+    vertical-align: middle;
+    margin: 5px;
+}
+.tweet span{
+    margin-left: 10px;
+}
+.tweet .text{
+    height: 40px;
+    text-overflow: ellipsis;
+}
+.profile{
+    margin: 0;
+}
+.profile img{
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+.text {
+    /*margin: 1%;*/
+    font-size: 13px;
+    position: relative;
+
+    width: 90%; /* Could be anything you like. */
+}
+
+.text-concat {
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 6em; /* (Number of lines you want visible) * (line-height) */
+    line-height: 1.2em;
+    /*text-align:justify;*/
+}
+#tweetsContent{
+    margin-top: 30px;
+}
+

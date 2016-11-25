@@ -41,41 +41,20 @@
 
 
     </style>
-
-
-    <style>
-
-    </style>
 </head>
 <body>
 <header>
-    <div id="header">
-        <div id="first_header">
-            <div id="project_name">CS472 TwitterBar</div>
-            <nav id="nav1">
-                <ul>
-                    <li>
-                        <a href="#">Tweets</a>
-                    </li>
-                    <li>
-                        <a href="">Map</a>
-                    </li>
-                    <li>
-                        <a href="">Trends</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div id="banner">
 
-    </div>
 </header>
-<section id="main">
-<%--<% String x="_tweets.jsp";%>--%>
-    <%--<%@include file=x %>--%>
+<nav id="nav2">
+    <ul>
+        <li id="documentary" class="documentary"><a href="tweets?q=documentary">Documentary</a></li>
+        <li class="action"><a href="tweets?q=action">Action</a></li>
+        <li class="adventure"><a href="tweets?q=adventure">Adventure</a></li>
+        <li class="comedy"><a href="tweets?q=comedy">Comedy</a></li>
+    </ul>
 
-</section>
+</nav>
 </body>
 <footer>
 

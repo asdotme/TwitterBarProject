@@ -1,0 +1,21 @@
+#map{
+    width: 100%;
+    height: 300px;
+}
+.trends{
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-bottom: 20px;
+
+}
+#trends_map{
+    margin: 20px auto;
+    width: 90%;
+    margin-top: 40px;
+}
+#trend_header{
+    font-size: 22px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+}

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="TwitterBarProject:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/TwitterBarProject</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="TwitterBarProject/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="TwitterBarProject" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
